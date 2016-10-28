@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Move Search</title>
+    <link rel="stylesheet" href="css/sec.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        //圖片縮圖
+        $(window).load(function() {
+            $("img").each(function(i) {
+                if ($(this).attr("alumb") == "true") {
+                    //移除目前設定的影像長寬
+                    $(this).removeAttr('width');
+                    $(this).removeAttr('height');
+
+                    //取得影像實際的長寬
+                    var imgW = $(this).width();
+                    var imgH = $(this).height();
+
+                    //計算縮放比例
+                    var w = $(this).attr("_w") / imgW;
+                    var h = $(this).attr("_h") / imgH;
+                    var pre = 1;
+                    if (w > h) {
+                        pre = h;
+                    }
+                    else {
+                        pre = w;
+                    }
+
+                    //設定目前的縮放比例
+                    $(this).width(imgW * pre);
+                    $(this).height(imgH * pre);
+                }
+            });
+        });
+    </script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="section-inner">
+            <ul class="clearfix">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">
+                        <h4>以戲院查詢</h4>
+                    </a>
+                    <div class="dropdown-content">
+                        <h4>
+                            <a href="javascript:location.href='https://lab0001-livevil404.c9users.io/firstFolder/moveList.php'">台中大遠百威秀影城</a>
+                            <a href="javascript:location.href='https://lab0001-livevil404.c9users.io/firstFolder/moveList.php'">台中TigerCity威秀影城</a>
+                            <a href="javascript:location.href='https://lab0001-livevil404.c9users.io/firstFolder/moveList.php'">台中TigerCity威秀影城(Gold Class)</a>
+                            <a href="javascript:location.href='https://lab0001-livevil404.c9users.io/firstFolder/moveList.php'">台中大魯閣新時代威秀影城</a>
+                        </h4>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">
+                        <h4>以電影查詢</h4>
+                    </a>
+                    <div class="dropdown-content">
+                        <h4>
+                            <a href="https://lab0001-livevil404.c9users.io/firstFolder/hotMovie.html">哈燒影榜</a>
+                            <a href="https://lab0001-livevil404.c9users.io/firstFolder/hotMovie.html">本周排名</a>
+                    </div>
+                    </h4>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">
+                        <h4>友站連結</h4>
+                    </a>
+                    <div class="dropdown-content">
+                        <h4>
+                            <a href="https://www.vscinemas.com.tw/index.aspx">威秀影城</a>
+                    </div>
+                    </h4>
+                </li>
+
+                <li class="dropdown">
+                    <a href="https://lab0001-livevil404.c9users.io/firstFolder" class="dropbtn">
+                        <h4>回首頁</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <br><br><br><br>
+        <h1>　　　哈燒影榜</h1><br><br><br><br><br><br><br><br><br>
+
+        <div style="margin:0 top:300px; ">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+
+                        <div>
+                            <h3 class="rank">Hot News</h3>
+                            <h2><a href="https://lab0001-livevil404.c9users.io/firstFolder/no6.html">奇異博士</a></h2>
+                            <h3>DOCTOR STRANGE</h3>
+                            <img src="something/no6.jpg" alumb="true" _w="300" _h="300" width="500" alt="奇異博士" title="奇異博士"></a>
+                            <p>上映日期：2016/10/26<br> 進榜週數：1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+
+                        <div>
+                            <h3 class="rank">NO.1</h3>
+                            <h2><a href="https://lab0001-livevil404.c9users.io/firstFolder/no1.html">你的名字</a></h2>
+                            <h3>YOUR NAME</h3>
+                            <img src="something/yourName.jpg" alumb="true" _w="300" _h="300" width="500" alt="你的名字" title="你的名字"></a>
+                            <p>上映日期：2016/10/21<br> 進榜週數：1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div>
+                            <h3>NO.2</h3>
+                            <h2><a href="https://lab0001-livevil404.c9users.io/firstFolder/no2.html">神隱任務 永不回頭</a></h2>
+                            <h3>JACK REACHER NEVER GO BACK</h3>
+                            <img src="something/no2.jpg" alumb="true" _w="300" _h="300" width="500" alt="神隱任務 永不回頭" title="神隱任務 永不回頭"></a>
+                            <p>上映日期：2016/10/21<br> 進榜週數：1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div>
+                            <h3>NO.3</h3>
+                            <h2><a href="https://lab0001-livevil404.c9users.io/firstFolder/no3.html">會計師</a></h2>
+                            <h3>THE ACCOUNTANT</h3>
+                            <img src="something/no3.jpg" alumb="true" _w="300" _h="300" width="500" alt="會計師" title="會計師"></a>
+                            <p>上映日期：2016/10/14<br> 進榜週數：2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div>
+                            <h3>NO.4</h3>
+                            <h2><a href="https://lab0001-livevil404.c9users.io/firstFolder/no4.html">地獄</a></h2>
+                            <h3>INFERNO</h3>
+                            <img src="something/no4.jpg" alumb="true" _w="300" _h="300" width="500" alt="地獄" title="地獄"></a>
+                            <p>上映日期：2016/10/12<br> 進榜週數：2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div>
+                            <h3>NO.5</h3>
+                            <h2><a href="https://lab0001-livevil404.c9users.io/firstFolder/no5.html">碟仙 惡靈始源</a></h2>
+                            <h3>OUIJA ORIGIN OF EVIL</h3>
+                            <img src="something/no5.jpg" alumb="true" _w="300" _h="300" width="500" alt="碟仙 惡靈始源" title="碟仙 惡靈始源"></a>
+                            <p>上映日期：2016/10/21<br> 進榜週數：1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
